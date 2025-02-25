@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="style.css.css">
+</head>
+<body>
+    <h1>Crud Operation For Users</h1>
+    <div class="container">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email">
+        </div>
+        <button class="btn" id="addBtn">Add</button>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Popup for editing user -->
+    <div class="popup" id="editPopup">
+        <div class="popup-content">
+            <h2>Edit User</h2>
+            <div class="input-group">
+                <label for="editName">Name:</label>
+                <input type="text" id="editName">
+            </div>
+            <div class="input-group">
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail">
+            </div>
+            <button class="btn" id="saveEditBtn">Save</button>
+            <button class="btn" id="closeEditBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js.js"></script>
+</body>
+</html>
